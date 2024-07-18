@@ -1,0 +1,1558 @@
+/*
+Theme Name: Цимлянские вина
+Description: Тема для ОАО "Цимлянские вина"
+Author: Sagittarius Group
+Author URI: https://sagittariusgroup.ru
+Version: 1.0.0
+Text Domain: aperitif
+Template: aperitif
+*/
+
+
+/* Шрифты */
+
+@font-face {
+  font-family: 'TTChocolates';
+  src: local('TTChocolates'),
+	   url('fonts/TTChocolates-Regular.woff2') format('woff2'), 
+	   url('fonts/TTChocolates-Regular.woff') format('woff'),
+	   url('fonts/TTChocolates-Regular.ttf') format('ttf'),
+	   url('fonts/TTChocolates-Regular.eot') format('eot');
+}
+
+@font-face {
+  font-family: 'PetrovskyOneC';
+  src: local('PetrovskyOneC'),
+	   url('fonts/petrovskyonec.woff2') format('woff2'), 
+	   url('fonts/petrovskyonec.woff') format('woff'),
+	   url('fonts/petrovskyonec.ttf') format('ttf'),
+	   url('fonts/petrovskyonec.eot') format('eot');
+}
+
+/* Общее */
+body, div, p, h2, h3, h4, h5, h6 {
+	 font-family: 'TTChocolates', serif; 
+	 letter-spacing: 0;
+	 color: #3d1a00;
+}
+ 
+img {vertical-align: bottom !important;}
+
+.terroir h2 a:hover {color: #fff}
+.container, .row { display: block; width: 100%;}
+.row {padding: 10px 0; margin: 10px 0}
+.col-md-1, .col-md, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12  {display: inline-block;}
+.col-md-1 {width: 8.3%}
+.col-md-2 {width: 16.6%}
+.col-md-3 {width: 25%}
+.col-md   {width: 20%}
+.col-md-4 {width: 33%}
+.col-md-5 {width: 41.6%}
+.col-md-6 {width: 48%;}
+.col-md-8 {width: 66.6%;}
+.col-md-12 {width: 100%;}
+
+.qodef-header--standard #qodef-page-header {
+	padding: 0 100px;}
+
+.vc_row-has-fill>.vc_column_container>.vc_column-inner {
+     padding-top: 0 !important;}
+
+#rev_slider_1_1_forcefullwidth
+{margin-top: 38px !important;}
+
+.qodef-content-grid {
+    width: 100% !important;
+  }
+
+.qodef-page-title { display: none !important;}
+#qodef-page-inner {
+	top: -50px;}
+
+
+
+@media screen and (max-width: 1044px)
+{
+.col-md, .col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12  {width: 100%;}	
+figcaption
+{padding-left: 20px;}
+.wine {padding: 0 !important;}
+.line-header, .line-header a{ font-size: 45px !important; text-align: center; line-height: 55px;}
+#qodef-page-inner {
+	top: -110px;}
+
+}
+	
+}
+#qodef-page-outer {
+    margin-top: -160px;
+}
+#qodef-page-header-inner .qodef-header-logo-link img:not(.qodef--main) {
+    transform: scale(1.5) !important;
+    top: 40%;
+    left: 100%;
+}
+
+
+.vc_custom_1672334440181 p
+{
+    margin-top: 100px;
+    font-size: 20px !important;
+    line-height: 25px !important;
+}
+
+@media screen and (max-width: 1200px)
+{
+	.vc_custom_1672334440181 p
+{
+    margin-top: 0;
+}
+}
+/*
+ * Для ноутбуков
+ * */
+
+@media screen and (min-width: 1044px) and (max-width: 1440px)
+{
+	#qodef-page-header-inner .qodef-header-logo-link img:not(.qodef--main) {
+    transform: scale(1.2) !important; 
+    top: 10%;
+    left: 0;
+    }
+	
+	.qodef-m-image img
+	{padding-left: 33px;
+	}
+	.mainpage-title .qodef-m-title {
+    position: absolute;
+    width: 200%;
+    padding: 0 30px;
+    font-size: 74px;
+}
+	
+	.vc_custom_1669731961257 {
+    padding: 100px 0 0 0!important;
+}
+	
+	.main-aboutus{
+		background-color: #353535 !important;
+		padding: 50px 10% 0 0;
+	}
+	
+		
+	.mainpage-title .qodef-m-subtitle {
+ 	padding-left: 30px !important;}
+	
+}
+/* Для планшетов */
+
+@media screen and (min-width: 630px) and (max-width: 1044px)
+{
+	/* На главной о нас */
+	
+	.mainpage-title .qodef-m-title {
+		padding-left: 20px;
+    font-size: 70px;
+    margin-top: -50px;
+    line-height: 80px;
+}
+	.vc_custom_1672334440181 {
+    padding: 60px 140px 50px 35px!important;
+}
+	
+	.vc_custom_heading {
+    font-size: 30px;
+       }
+	
+
+}
+
+/* Шапка Меню */
+
+.qodef-header-navigation>ul>li>a, .qodef-header-navigation ul li a .qodef-menu-item-inner {
+    color: #e62237;
+    font-family: 'TTChocolates', serif !important;
+    font-size: 16px;
+    line-height: 30px;
+    font-weight: 900;
+    text-transform: uppercase !important;
+    border-bottom: solid 4px rgba(255,255,255,0);
+}
+
+.qodef-header-navigation ul li a .qodef-menu-item-inner:hover
+{
+	border-bottom: solid 4px #b9433b;
+}
+.qodef-header--light .qodef-header-navigation ul li a:before, .qodef-header--light .qodef-header-navigation ul li a:after {
+    background-color: transparent !important;
+}
+
+.qodef-header-navigation ul li.qodef-menu-item--narrow ul li a:hover .qodef-menu-item-inner {
+    color: #000000;
+	border-bottom: solid 4px rgba(255,255,255,0);
+}
+
+
+.qodef-header-navigation ul li.qodef-menu-item--narrow ul li a:hover .qodef-menu-item-inner {
+    color: #b9433b !important;
+}
+
+.qodef-header-navigation ul li.qodef-menu-item--narrow ul li a:hover .qodef-menu-item-inner:before {
+   content: '';
+   position: absolute;
+   left: -20px;
+   top: 14px;
+   display: inline-block;
+   width: 8px;
+   height: 1px;
+   opacity: 1;
+   background-color: #b9433b;	
+}
+
+.qodef-fullscreen-menu-holder nav.qodef-fullscreen-menu ul li a {
+	font-family: ;'TTChocolates' !important;
+    font-size: 16px !important;
+    line-height: 30px !important;
+    font-weight: 400;
+    text-transform: uppercase !important;
+}
+
+.qodef-header-navigation ul li.qodef-menu-item--narrow ul li.current-menu-item>a>span, .qodef-menu-item-text:hover, .qodef-header-navigation ul li.qodef-menu-item--narrow ul li.current-menu-item>a>span
+{ color: #b9433b;}
+
+.sub-menu li a span
+{
+	font-size: 13px !important;
+	
+}
+
+/* Мобильное меню */
+
+#qodef-page-mobile-header .qodef-mobile-header-logo-link {	
+	max-height: 100% !important;
+}
+
+#qodef-page-mobile-header {
+    background-color: transparent;
+}
+
+#qodef-page-mobile-header {
+		height: 82px;
+	}
+
+@media screen and (max-width: 1024px){
+.qodef-fullscreen-menu-opener.qodef-fullscreen-menu-opener--predefined .qodef-lines {
+    position: relative;
+    display: block;
+    width: 40px !important;
+    height: 30px !important;
+}
+#qodef-page-mobile-header .qodef-mobile-header-logo-link {
+	    height: 82px;	
+	}
+}
+/* Slider */
+
+.slider-header div, #slider-1-slide-1-layer-13 div{
+	font-family: 'PetrovskYOneC', serif !important;
+	letter-spacing: 1px !important;   
+}
+
+.slider-text, .slider-button{
+	font-family: 'TTChocolates', serif !important;
+	  
+}
+
+
+span.allfeatures_name {
+    font-size: 18px;
+    font-weight: 600;
+    margin-right: 8px;
+	line-height: 35px;}
+
+span.allfeatures_name a{color: #987745;}
+span.allfeatures_name a:hover {color: #b3120c; text-decoration: underline dotted;}
+
+.allfeatures-center{text-align: center}
+
+
+.bottle-row {
+	height: 550px;
+    display: inline-block;
+    vertical-align: top;
+}
+
+/* Главная страница заголовки */
+
+	.main-aboutus{
+		padding: 150px 11.5% 0 0;
+		background-color: #353535 !important;
+	}
+.mainpage-title .qodef-m-title
+{
+	position: absolute;
+	width: 200%;
+	font-size: 85px;
+}
+
+.qodef-m-subtitle{
+	color: #987745 !important;
+}
+
+.mainpage-other-title .qodef-m-title
+{
+	font-size: 70px;
+	width: 200%;
+	font-family: 'PetrovskYOneC', serif !important;
+	letter-spacing: 1px !important;   
+}
+
+.mainpage-other-title .qodef-m-subtitle
+{
+	 padding-top: 40px;
+	font-size: 20px !important;
+}
+
+.mainpage-title .qodef-m-subtitle
+{ padding-top: 100px !important;}
+
+.vc_custom_1660078093336, .vc_custom_1660498456909 {
+    padding: 150px 80px 15px 80px !important;
+   
+}
+
+/* Новости */
+.vc_custom_1672334440181 {
+    padding-left: 120px !important;
+  }
+.news-title h3 {
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 18px;
+}
+
+.post-date
+{text-align: left;
+    margin-top: -20px;
+    font-size: 15px;
+    font-weight: 800;
+    color: #987745;}
+
+.post-excerpt p{font-size: 20px;
+    line-height: 20px;}
+
+.readmore {
+    font-size: 20px !important;
+    font-weight: 600;
+    font-style: italic;
+}
+
+
+@media screen and (max-width: 766px)
+{ 
+.wp-block-kadence-posts.kb-posts-style-unboxed .loop-entry.content-bg>.entry-content-wrap {
+    padding: 0 20px !important;
+}
+}
+
+@media screen and (max-width: 1440px)
+{ .qodef-header-navigation>ul>li {
+	padding: 0;
+	}}
+
+@media screen and (max-width: 450px)
+{.mainpage-title .qodef-m-title {
+    position: relative;
+    width: 100%;
+	padding-top: 30px;
+	line-height: 50px;
+    font-size: 45px;
+	}
+.qodef-section-title .qodef-m-subtitle {
+     font-size: 33px !important;
+	}
+	
+	.identica { opacity: 0.1 !important;}	
+}
+
+
+@media screen and (max-width: 1044px)
+{
+.mainpage-title
+{padding-top: 10px;
+ padding-bottom: 0;}
+
+.mainpage-title .qodef-m-title
+{
+	position:relative;
+	width: 100%;
+	font-size: 43px;
+	line-height: 55px;
+}
+	
+.mainpage-title .qodef-m-subtitle
+{ padding-top: 20px !important;}
+.vc_gitem-post-data {
+    margin-bottom: 15px;
+    font-size: 15px !important;
+}	
+	
+	.vc_custom_heading readmore {  font-size: 15px !important;}	
+.vc_custom_1660078093336{
+    padding: 50px 15px 15px 15px !important;}
+	
+	.vc_custom_1660498456909 {
+		padding: 0!important
+	}	
+	.vc_custom_1660498456909 h2 {
+		padding: 50px 15px 15px 15px;
+		font-size: 50px !important;
+	}
+	.vc_custom_1660498456909 p{
+		padding-left: 15px;
+	}
+	.vc_custom_heading
+	{font-size: 50px;}
+	
+	
+.mainpage-other-title .qodef-m-title {
+    font-size: 40px;
+    width: 100%;
+	line-height: 45px;}	
+	.slider-butylochek
+	{margin: 40px 0;}
+	
+	
+.qodef-header--light:not(.qodef-fullscreen-menu--opened) .qodef-fullscreen-menu-opener.qodef-fullscreen-menu-opener--predefined .qodef-line {
+    background-color: #987745 !important;
+}	
+.qodef-fullscreen-menu-opener.qodef-fullscreen-menu-opener--predefined .qodef-lines {
+    position: relative;
+    display: block;
+    width: 30px;
+	height: 22px;}
+	
+.qodef-fullscreen-menu-opener.qodef-fullscreen-menu-opener--predefined .qodef-lines .qodef-line {
+   
+	height: 3px;}	
+	
+	.diary-content{
+		margin-left:-80px !important;
+		padding-left: 40px !important;
+	}
+	.kadence-column_8f804a-17 > .kt-inside-inner-col {
+    padding-top: 0 !important;
+    
+}
+	.diary-pic {
+    width: 100%;
+    height: 300px;
+    overflow: hidden;
+    display: inline-block;
+    margin-top: 20px !important;
+    margin-left: -50px !important;
+}
+	.diary-year
+	{
+		display: inline-block;
+		margin-top: -50px;
+	}
+	.diary-title {
+    font-size: 45px;
+    line-height: 50px;
+    letter-spacing: 0px;
+    margin-left: -50px !important;
+	margin-bottom: 90px !important;
+}
+	
+.wp-block-kadence-advancedheading.kt-adv-heading_81a0bf-2c[data-kb-block="kb-adv-heading_81a0bf-2c"], .wp-block-kadence-advancedheading.kt-adv-heading_81a0bf-2c[data-kb-block="kb-adv-heading_81a0bf-2c"] 
+	{font-size: 58px;}
+	
+	.line-header a	{
+		padding-top: 20px !important;
+	}
+	.buy-button div {
+		text-align: center !important;
+	}
+}
+
+/* Подзаголовки */
+
+.qodef-section-title .qodef-m-subtitle
+{
+ font-family: 'TTChocolates', serif !important;
+ font-size: 35px !important;
+ line-height: 35px;	
+ font-style: normal;
+ color: #987745;
+	
+}
+@media screen and (max-width: 490px)
+{
+.qodef-section-title .qodef-m-subtitle
+{
+ font-size: 30px !important;
+ line-height: 38px;	
+ font-weight: 400;	
+ font-style: normal;
+ color: #987745;
+	
+}
+	
+	.fp-collections a 
+	{text-transform: uppercase;}
+	
+	.identica
+	{opacity: 0.2}
+}
+
+
+/* Подписи к видео-кнопке */
+
+.frontpage-video .qodef-m-play-title
+{
+	font-family: 'PetrovskYOneC', serif !important;
+	font-size: 60px;
+	line-height: 100px;
+	color: #fff; 
+}
+
+.frontpage-video .qodef-m-play-subtitle
+{
+	font-family: 'TTChocolates', serif !important;
+	font-size: 25px !important;
+	font-style: normal !important;
+	line-height: 40px !important;
+	color: #fff !important; 
+}
+
+@media screen and (max-width: 780px)
+{
+	.qodef-video-button img {
+    max-width: 250%;
+    width: auto;
+    height: 300px;
+}
+	.frontpage-video .qodef-m-play-title {
+		font-size: 30px;
+	}
+	.qodef-video-button .qodef-m-play-text .qodef-m-play-subtitle{
+		display: none;
+	}
+}
+/* Слайдер бутылочек */
+
+.fp-collections
+   {font-size: 17px;
+    font-weight: 600;
+    line-height: 33px;
+}
+.fp-collections a {letter-spacing: -0.5px;}
+
+@media only screen and (max-width: 780px)
+{
+	.slider-butylochek{margin-top: 0}
+	.slider-butylochek h3, .vc_custom_1662322655774 {text-align: center !important;
+	                       padding-top: 0;
+	                       margin-top: 0;}
+	.fp-collections {text-align: center !important;}
+	.fp-collections a {letter-spacing: 1px;}
+
+	
+}
+@media screen and (min-width: 630px) and (max-width: 1044px)
+{
+ .fp-collections {
+		padding-left: 20px;
+	    padding-right: 20px;}
+
+}
+
+/* Страница wines */
+
+.wine-desc a 
+{text-decoration: underline;
+text-decoration-color: #987745;
+    text-decoration-style: dotted;
+}}
+.line-header{font-family: 'PetrovskYOneC', serif; 
+	font-size: 60px; 
+	letter-spacing: 0;
+    line-height: 70px;
+	color: #987745 !important;
+	display: block;}
+.line-header a {
+	font-family: 'PetrovskYOneC', serif; 
+	font-size: 60px; 
+	line-height: 60px;
+	color: #987745 !important;
+	display: block;
+	padding-top: 148px;
+	margin-bottom: 50px;
+	
+}
+
+.wine h4, h5 {
+	text-transform: uppercase;
+    font-weight: 600;
+}
+.wine p, h5, h4{margin: 0}
+.small-wine
+{max-width: 400px;
+    display: block;
+    margin: 0 auto;
+    text-align: center;}
+.wine-image {text-align: center}
+/*.wine-text {padding-left: 30px;} */
+.wine-image img {height: 300px}
+.wine-mainpic img {height: 600px;}
+.wine-text p { font-size: 15px; line-height: 20px; text-align: left; }
+/* .wine-text h5 {text-align: left} */
+
+h5.wine-linename {
+    color: #987745;
+    font-size: 12px;
+    text-align: center;
+    letter-spacing: 1px;
+    margin-bottom: 5px;
+}
+
+h5.wine-title {
+    text-align: center;
+}
+
+h4.wine-header-4 {
+	 text-align: center;
+	 padding: 30px 0;
+}
+.wine-desc {
+	text-align: left;
+    display: inline-block;
+    vertical-align: top;
+    padding-top: 10px;
+}
+.wine-desc h4 {
+	padding: 10px 0;
+	margin-bottom: 50px;}
+
+
+.comingsoon {
+	
+    text-align: center;
+    margin-top: -45px;
+    margin-bottom: 19px;
+    color: #e62237;
+    position: relative;
+    padding: 5px;
+    z-index: 300;
+    background-color: rgba(249, 246, 241, 0.6);
+
+}
+@media screen and (max-width:780px){
+	.line-header{
+	padding-top: 40px;
+	}
+/*	h3 {padding: 0 20px;}	*/
+.wine-desc {
+		padding: 0 20px;
+	}	
+.wine-desc h4 {margin-bottom: 20px;}	
+.wine-image{
+	height: 70%;
+	}	
+.tax-image img {
+    height: auto;
+    width: auto;
+}
+	.wine-image img {
+		height: 100%;
+	}
+	.wine-mainpic img {height: 500px;}
+	
+	h4.wine-header-4 
+	{padding: 30px 20px;}
+}
+/* Страницы таксономий */
+.wine {
+    display: block;
+    /* max-width: 1400px; */
+    margin: 30px auto 0 auto;
+    padding: 50px 120px 50px 120px;
+    background-color: #f9f6f1;
+}
+
+.tax-image {
+    display: inline-block;
+    vertical-align: top;
+    padding-top: 22px;
+}
+.wine-description p {padding-left: 50px; padding-top: 10px;}
+.buy-button div {
+		text-align: right;
+	}
+/* Страница блога */
+
+.wineblog{}
+.wineblog-header{height: 300px;
+    background-position: 10% 20%;
+	margin-top: -15px;
+    background-size: cover;
+    padding: 0;}
+
+.wineblog-header h1{
+	color: #f5f2eb;
+    font-size: 40px;
+    letter-spacing: 3px;
+    padding-left: 100px;
+    padding-top: 8%;
+    height: 300px;
+    background-color: rgba(0,0,0,0.5);
+}
+.wineblog-text
+{
+	display: block;
+	margin: 0 auto;
+	max-width: 1200px;
+}
+
+.wineblog-date
+{ padding-left: 100px;}
+
+@media screen and (max-width: 1024px)
+{ .wineblog-header h1{
+	font-size: 30px;
+    line-height: 48px;
+    padding-left: 25px;
+    padding-top: 20%;
+	}
+}
+/* Экскурсии */
+.vc_custom_1660516128205 {padding: 150px 80px 15px 80px;}
+.vc_custom_1660516128205 p{padding-top: 60px;}
+.main-page-tours{margin: 0 80px;}
+
+.main-page-tours .row
+{
+	padding-left: 10px;
+	vertical-align: top;
+}
+
+.main-page-tours .row:hover
+{background-color: #FFF;}
+
+.main-page-tours .tour-info
+{padding: 0 20px;}
+
+.tour-info {
+    padding: 40px 50px 40px 0;
+    vertical-align: top;
+}
+.tour-hint{
+	margin-top: -20px;
+    font-weight: 600;
+    margin-bottom: 14px;
+}
+
+.tour-small-excerpt
+{
+	padding: 15px 0;
+    font-size: 14px;
+    line-height: 15px;
+}
+.tour-uslovia {color: #000;}
+.tour-uslovia img {height: 14px; margin-top: -5px;}
+.tour-people {margin-right: 10px;}
+.tour-order {text-align: center;}
+.tour-adults0nly-sign img {height: 20px;}
+.order-button {padding-top: 20px;}
+.order-button button { background-color: transparent;
+    text-transform: uppercase;
+    padding: 5px 40px;
+    border: 2px solid #b3120c;
+    border-radius: 5px;}
+.tour {margin-top: 19px;}
+.tour .col-md-8
+{ display: inline-block;
+ vertical-align: top;
+ padding: 50px 0 0 80px;}
+.small-title
+{margin: 20px 0 40px 0;
+ font-family: 'TTChololates', serif;
+ font-size: 25px; 
+ letter-spacing: 3px;
+ text-transform: uppercase;}
+
+
+.vc_row.wpb_row.vc_row-fluid.tours-inner {
+    padding: 180px 120px 0 120px;
+}
+.vc_custom_1670418243570 {
+    padding: 50px 80px 0 80px;
+}
+.vc_custom_1670418388624 {
+     margin-left: 50px; 
+}
+@media screen and (max-width: 1024px)
+{   .vc_custom_1660516128205 {padding: 100px 0 0 10px;}
+	.vc_custom_1660516128205 p{padding-top: 10px;}
+	.main-page-tours{margin: 0;}
+	.main-page-tours .row{padding-left: 0;}
+	.tour-info{ padding-top: 20px !important;}
+	.tour {margin-top: -120px;}
+	.tour .col-md-8 { padding: 10px }
+	.tour h1 {font-size: 40px;}
+   #custom_html-3, .footer-left, #custom_html-5, #custom_html-6
+	{padding: 0 20px !important;}
+	.vc_custom_1670418243570 {
+    padding: 10px 20px 0 20px;
+}
+	.vc_row.wpb_row.vc_row-fluid.tours-inner {
+    padding: 40px 20px 0 20px;
+}
+	.vc_custom_1670418388624 {
+     margin-left: 0; 
+}
+}
+
+/* Страница История
+ * */
+.kazak-text .qodef-workflow .qodef-e-workflow-image
+{top: 30% !important;}
+.vinograd-text .qodef-workflow .qodef-e-workflow-image{
+top: 6% !important;}
+.platov-text .qodef-workflow .qodef-e-workflow-image{
+top: 10% !important;}
+.nowadays .qodef-workflow .qodef-e-workflow-image{
+top: 23% !important;}
+
+@media screen and (min-width: 1810px)
+{	
+.vc_custom_1669750519360 {margin-top: 190px;}
+.qodef-workflow .qodef-e-workflow-image img
+{width: 420px !important;}
+.qodef-workflow .qodef-e-workflow-item-inner {
+    max-width: 470px;
+    position: relative;
+}
+	.qodef-workflow .qodef-e-subtitle {
+    font-size: 22px;
+    font-style: italic;
+    color: #c8693a;
+    margin: 0;
+}
+
+.qodef-workflow .qodef-e-workflow-item:nth-child(even) .qodef-e-workflow-item-inner {
+    -webkit-transform: translateX(45%);
+    -ms-transform: translateX(45%);
+    transform: translateX(45%);
+}
+
+.qodef-workflow .qodef-e-workflow-item:nth-child(odd) .qodef-e-workflow-item-inner {
+	-webkit-transform: translateX(-45%);
+    -ms-transform: translateX(-45%);
+	transform: translateX(-45%);}
+	
+p.qodef-e-text
+ {font-size: 25px;
+    line-height: 30px;
+}
+.qodef-workflow .qodef-e-workflow-item-inner:after {
+    content: '';
+    max-width: 100px;
+    height: 1px;
+    display: block;
+    position: absolute;
+	top: 20px;}
+}
+
+
+/* Большой экран */
+@media screen and (min-width: 1441px) and (max-width: 1809px)
+{
+.vc_custom_1669750519360 {margin-top: 170px;}
+
+.qodef-workflow .qodef-e-workflow-image img
+{width: 400px !important;}
+	
+.qodef-workflow .qodef-e-workflow-item-inner {
+    max-width: 300px;
+    position: relative;
+}
+	
+.qodef-workflow .qodef-e-workflow-item:nth-child(even) .qodef-e-workflow-item-inner {
+    -webkit-transform: translateX(35%);
+    -ms-transform: translateX(35%);
+    transform: translateX(35%);
+}
+
+.qodef-workflow .qodef-e-workflow-item:nth-child(odd) .qodef-e-workflow-item-inner {
+	-webkit-transform: translateX(-35%);
+    -ms-transform: translateX(-35%);
+    transform: translateX(-35%);	
+	}
+	
+	
+p.qodef-e-text
+
+ {font-size: 19px;
+    line-height: 23px;
+}
+.qodef-workflow .qodef-e-workflow-item-inner:after {
+    content: '';
+    max-width: 100px;
+    height: 1px;
+    display: block;
+    position: absolute;
+	top: 20px;}
+}
+/*Средний (нетбук)*/
+
+@media screen and (min-width: 1044px) and (max-width: 1440px)
+{
+	.qodef-e-text {font-size: 16px !important;
+	  line-height: 20px !important;}	
+	
+	.khazar{
+		top: 250px !important;
+		right: 80px !important;
+		width: 250px !important;
+	}
+	.khazar-text
+	{margin-top: 50px  !important;}
+	
+	.kazak
+	{
+		top: 90px !important;
+		width: 250px !important;
+	}
+	
+	.kazak-text
+	{
+		margin-top: 80px !important; 
+	}
+	
+	.vinograd
+	{
+		top: -245px  !important;
+	}
+	
+	.vinograd-text
+	{
+		margin-top: 80px !important;
+	}
+	
+	.platov
+	{
+		top: 450px !important;
+		left: 130px !important;
+		width: 300px !important;
+	}
+	
+	.platov-text
+	{
+		margin-top: 130px !important;
+	}
+	
+	.pushkin{
+		width: 300px !important;
+	}
+	.pushkin-text
+	{
+		margin-top: 100px !important;
+	}
+	.bochki
+	{
+		top: 835px !important;
+		width: 280px !important;
+	}
+	
+	.year1786
+	{
+		top: 12px !important;
+		right: 85px !important;
+	}
+	
+	.tsimla-logo
+	{
+		top: 40px !important;
+	}
+	
+.vc_custom_1669750519360 {margin-top: 160px;}
+.qodef-workflow .qodef-e-workflow-item-inner {
+		max-width: 300px !important;}	
+	
+.qodef-workflow .qodef-e-workflow-image img
+{width: 340px !important;}
+	
+.qodef-workflow .qodef-e-workflow-item:nth-child(even) .qodef-e-workflow-item-inner {
+    -webkit-transform: translateX(30%);
+    -ms-transform: translateX(30%);
+    transform: translateX(30%) !important;
+}
+	
+	.qodef-workflow .qodef-e-workflow-item:nth-child(odd) .qodef-e-workflow-item-inner {
+	-webkit-transform: translateX(-30%);
+    -ms-transform: translateX(-30%);
+    transform: translateX(-30%);	
+	}
+}
+
+/* Планшет */
+@media screen and (min-width: 676px) and (max-width: 1043px)
+{
+.vc_custom_1669750519360 {margin-top: 120px;}
+	
+.qodef-workflow .qodef-e-workflow-item:nth-child(even) .qodef-e-workflow-item-inner {
+    -webkit-transform: translateX(10%) !important;
+    -ms-transform: translateX(10%) !important;
+    transform: translateX(10%) !important;
+}
+	
+	.qodef-workflow .qodef-e-workflow-item:nth-child(odd) .qodef-e-workflow-item-inner {
+	-webkit-transform: translateX(-10%) !important;
+    -ms-transform: translateX(-10%) !important;
+    transform: translateX(-10%) !important;	
+	}
+	.khazar {
+		top: 313px !important;
+		right: 55% !important;
+		width: 255px !important;
+		opacity: 0.7 !important;
+	}
+	.khazar-text{
+		margin-top: 385px;
+	}
+	.kazak{
+		top: -35px !important;
+		right: 15% !important;
+		opacity: 0.7 !important;
+	}
+	.kazak-text{
+		margin-top: 300px;
+	}
+	.vinograd
+	{display: none;}
+	
+	.vinograd-text
+	{margin-top: 100px;}
+	
+	.year1786
+	{top: -200px !important;
+	 right: 13% !important;
+	 opacity: 0.7 !important;
+	}
+	
+	.platov {
+		top: 790px !important;
+		left: 12% !important;
+		opacity: 0.7 !important;
+	}
+	.platov-text {
+		margin-top: 310px;
+	}
+	.bochki, .hide-please
+	{display: none;}
+	
+	.pushkin
+	{
+		top: -15px !important;
+		right: 12% !important;
+		width: 300px !important; 
+		opacity: 0.7 !important;
+	}
+	.pushkin-text
+	{
+		margin-top: 300px;
+	}
+	
+	.venus
+	{
+		top: -400px !important;
+		right: 12%  !important;
+		width: 300px  !important;
+		opacity: 0.7 !important;
+	}
+	
+	.medal 
+	{
+		top: -282px !important;
+		right: 17%  !important;
+		width: 250px  !important;
+		opacity: 0.7 !important;
+	}
+	
+	.tsimla-logo
+	{top: -340px !important;
+	 right: 12%  !important;
+	 width: 300px  !important;
+	 opacity: 0.7 !important;
+	}
+	
+	.tsimla-logo-text
+	{
+		margin-top: 300px;
+	}
+}
+/* Понтовый телефон */
+@media screen and (min-width: 413px) and (max-width: 675px)
+
+{
+.qodef-workflow .qodef-e-workflow-item:nth-child(even) .qodef-e-workflow-item-inner, .qodef-workflow .qodef-e-workflow-item:nth-child(odd) .qodef-e-workflow-item-inner{
+    -webkit-transform: none !important;
+    -ms-transform: none !important;
+    transform: none !important;
+	}
+		.page-title h1 {
+		font-size: 50px !important;
+		padding: 130px 20px 0 20px !important;
+	}
+	.qodef-workflow .qodef-e-workflow-item-inner
+	{
+		
+	    text-align: left;}
+	
+	.khazar
+	{
+		top: 420px !important;
+		right: 24%!important;
+		opacity: 0.8!important;
+	}
+	.khazar-text
+	{
+		padding-top: 480px;
+	}
+	.kazak {
+	top: 0px !important;
+    right: 50px !important;
+    width: 350px !important;
+    opacity: 0.8 !important;
+	}
+	.kazak-text{
+		padding-top: 400px
+	}
+	.vinograd {display: none;} 	
+	.vinograd-text{padding-top: 100px !important;}
+	.year1786{
+	top: -120px !important;
+    right: 20% !important;
+    width: 300px !important;
+    opacity: 0.8 !important;
+	}
+	.platov
+	{
+    top: 100% !important;
+    left: 12% !important;
+    width: 312px !important;
+    opacity: 0.8 !important;
+	}
+	.platov-text{
+		padding-top: 300px;
+	}
+	.bochki {display: none;}
+	.pushkin{
+	top: 0 !important;
+    right: 10% !important;
+    width: 350px !important;
+    opacity: 0.8 !important;
+	}
+	.pushkin-text
+	{
+		padding-top: 400px;
+	}
+	.vc_custom_1671449741573  {
+    padding-top: 30px !important;
+}
+	.venus {
+		    top: -450px !important;
+    right: 15% !important;
+    width: 350px !important;
+    opacity: 0.8 !important;
+	}
+	
+	.hide-please {
+		display: none;	}
+	
+	.medal 
+	{
+    top: -285px !important;
+    right: 15% !important;
+    width: 300px !important;
+    opacity: 0.8 !important;}
+	
+	.tsimla-logo
+	{top: -30px !important;
+    right: 17% !important;
+    width: 300px !important;
+    opacity: 0.7 !important;}
+	
+	.tsimla-logo-text {
+		padding-top: 300px;
+	}
+	
+}
+/* Телефон */
+@media screen and (max-width: 413px){
+	.page-title h1 {
+	padding: 120px 20px 0 20px !important;
+    font-size: 45px !important;
+    line-height: 60px;
+	}
+
+	.vc_custom_1669750519360 {margin-top: 0;}
+	.qodef-workflow .qodef-e-workflow-item-inner {
+    max-width: 100%;
+    padding: 0 20px;
+    position: relative;
+     }
+	
+   .vc_custom_1662645450210 .wpb_single_image img {
+	height: 100%;
+    position: relative;
+    right: 150%;
+    max-width: initial;
+    vertical-align: top;
+	}
+	.khazar {
+	top: 100% !important;
+    right: 10% !important;
+    width: 80% !important;
+    opacity: 0.7 !important;
+	}
+	.khazar-text{
+		margin-top: 120%;
+	}
+	.kazak{
+		right: 10%  !important;
+		width: 80% !important;
+		top: 90% !important;
+		opacity: 0.7 !important;
+	}
+	.kazak-text{
+		margin-top: 100%;
+	}
+	.vinograd
+	{display: none;}
+	
+	.vinograd-text
+	{margin-top: 100px;}
+	
+	.year1786
+	{top: -200px !important;
+	 width: 80% !important;
+	 right: 13% !important;
+	 opacity: 0.7 !important;
+	}
+	
+	.platov {
+		top: 100% !important;
+		width: 80% !important;
+		left: 12% !important;
+		opacity: 0.7 !important;
+	}
+	.platov-text {
+		margin-top: 310px;
+	}
+	.bochki, .hide-please
+	{display: none;}
+	
+	.pushkin
+	{
+		top: -15px !important;
+		right: 10%  !important;
+		width: 80% !important;
+		opacity: 0.7 !important;
+	}
+	.pushkin-text
+	{
+		margin-top: 300px;
+	}
+	
+	.venus
+	{
+		top: -400px !important;
+		right: 10%  !important;
+		width: 80% !important;
+		opacity: 0.7 !important;
+	}
+	
+	.medal 
+	{
+		top: -282px !important;
+		right: 15%  !important;
+		width: 70%  !important;
+		opacity: 0.7 !important;
+	}
+	
+	.tsimla-logo
+	{top: -340px !important;
+	 right: 12%  !important;
+	 width: 300px  !important;
+	 opacity: 0.7 !important;
+	}
+	
+	.tsimla-logo-text
+	{
+		margin-top: 300px;
+	}
+}
+
+/* Награды */
+.nagrady
+{padding: 30px 120px 20px 120px;}
+.nagrady h2, h2.kt-adv-heading_8884b7-75 {padding-bottom: 50px;
+            font-family: 'PetrovskYOneC', serif !important;
+            font-size: 40px;     }
+
+/* Подвал */
+
+.socials 
+{display: inline-block;
+ margin-right: 5px;
+ }
+.socials a 
+{font-size: 17px;
+ color: #e62237 !important;}
+
+#qodef-page-footer .widget ul:not(.qodef-shortcode-list) li {
+    margin: 0;
+    line-height: 19px;
+	}
+
+#qodef-page-footer-top-area {
+	padding: 50px 0;}
+
+#qodef-page-footer-top-area p
+{color: #3d1a00 !important;}
+
+
+#qodef-page-footer .widget ul:not(.qodef-shortcode-list) li a {
+color: #333;	
+}
+
+.footer-left .qodef-icon-with-text .qodef-m-text{ margin: -5px 0 0 0; }
+.footer-left .qodef-icon-with-text.qodef-layout--before-content {margin-bottom: 9px;}
+footer .fa, .fas {
+    color: #e62237;
+}
+
+footer p{font-size: 18px;}
+
+.city-shop .qodef-icon-with-text .qodef-m-text{ margin: 0; }
+.city-shop .fa-phone{font-size: 14px;}
+.city-shop .qodef-icon-with-text.qodef-layout--before-content {margin-bottom: 3px;}
+footer .qodef-icon-with-text.qodef-layout--before-content .qodef-m-icon-wrapper {margin-right:8px;}
+p.street-name {padding-left: 3px;}
+.second-row {padding-top: 20px}
+
+@media screen and (max-width: 400px)
+{
+.second-row {padding-top:0;
+	         margin-top: -40px;}
+}
+
+.menu-vazhnye-dokumenty-container
+{ margin-top: 42px;
+    text-transform: uppercase;
+    font-size: 15px;
+}
+
+.footer-logo img
+{height: 150px;
+ margin: 0 auto}
+
+.footer-left
+{padding-left: 80px;}
+
+.footer-left .qodef-icon-holder .qodef-icon {
+    color: #e62237;
+    margin-right: 6px;
+	padding-top: 5px;}
+
+#qodef-page-footer .widget a:hover{color: #e62237 !important;}
+#qodef-page-footer .qodef-widget-title {
+    
+    font-size: 30px;
+}
+
+.city-shop h3 {font-size: 15px;
+    text-transform: uppercase;
+    font-weight: 600;
+    margin-bottom: 0;}
+
+.city-shop p
+{font-size: 15px;
+ line-height: 16px;}
+#menu-vina-v-podvale a, #menu-vazhnye-dokumenty a {
+    font-size: 15px;
+	font-weight: 600;
+    line-height: 25px;
+}
+
+/* страница поиска
+ * */
+.search-page {
+    padding: 180px 120px 50px 100px;
+}
+h5.wine-title {
+    text-align: center;
+    font-size: 17px;
+    line-height: 23px;
+    display: block;
+    padding: 0 10px;
+}
+.widget.widget_search input {
+	font-size: 20px;
+	text-transform: uppercase;
+	font-weight: 600;
+	color: #FFF;
+}
+.search-page .qodef-m-title
+{font-family: 'PetrovskYOneC', serif !important;
+ color: #987745;
+ margin: 40px 0;}
+@media screen and (max-width: 800px)
+{.search-page {
+    padding: 30px;
+}}
+
+/* Дневник виноградника */
+a, abbr, acronym, address, applet, b, big, blockquote, body, caption, center, cite, code, dd, del, dfn, div, dl, dt, em, fieldset, font, form, h1, h2, h3, h4, h5, h6, html, i, iframe, ins, kbd, label, legend, li, object, ol, p, pre, q, s, samp, small, span, strike, strong, sub, sup, table, tbody, td, tfoot, th, thead, tr, tt, u, ul, var {
+	vertical-align: top;}
+
+
+.diary {vertical-align: top !important;}
+.diary-content {
+	   border-left: 12px double #e62237;
+	   margin-top: 30px; 
+	   margin-left: -100px;
+	   padding-left: 100px;
+	   min-height: 220px;
+}
+.diary-content h3 {margin-top: 0}
+.diary .row {padding: 0; margin-top: 10px; margin-bottom: 0}
+.diary-year {
+	font-family: 'PetrovskyOneC', serif;
+    font-size: 39px;
+    margin-left: -20px;
+    font-weight: 600;
+    color: #d60017;
+    background-color: #f5f2eb;}
+.diary-month {
+	background-color: #f5f2eb;
+    font-family: 'TTChocolates';
+    font-size: 20px;
+    font-weight: 600;
+    color: #e62237;
+}
+.diary-pic img{ height: 100%;    
+    max-width: fit-content; }
+.diary-pic {
+	width: 300px;
+    height: 300px;
+    overflow: hidden;
+    display: inline-block;
+	margin-left: 40px;}
+
+.diary-title {
+    font-family: 'PetrovskyOneC', serif;
+    font-size: 45px;
+    line-height: 50px;
+    letter-spacing: 0px; 
+    margin-bottom: 90px;
+}
+
+.page-title h1 { 
+	font-family: 'PetrovskyOneC', serif;
+    font-size: 56px;
+    line-height: 70px;
+    letter-spacing: 0px; 
+    padding-top: 80px;}
+
+.page-title .qodef-m-subtitle{
+	padding-top: 40px;
+    font-size: 30px;
+}
+
+
+input[type="date"], select,input[type=email], input[type=number], input[type=password], input[type=tel], input[type=text], input[type=url], textarea {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+    vertical-align: top;
+    margin: 10px 0 !important;
+    padding: 10px !important;
+    font-family: inherit;
+    font-size: 19px !important;
+    line-height: 20px !important;
+    color: #333 !important;
+    border: 1px solid #e6e6e6;
+    border-radius: 5px;
+   }
+
+button[type=submit], input[type=submit] {
+    position: relative;
+    display: inline-block;
+    vertical-align: middle;
+    width: auto;
+    margin: 0;
+	font-family: 'TTChocolates', serif !important;
+    font-size: 20px;
+    font-weight: 600;
+    background-color: #e62237 !important;}
+/* Сорта винограда */
+
+.kt-adv-heading_a21d45-80 {
+	  font-family: 'PetrovskyOneC', serif;
+    font-size: 45px;
+    line-height: 50px;  
+}
+.grape-pic {
+	width: 200px;
+}
+.grape-name
+{
+	margin-top: 10px;
+    margin-bottom: 30px;
+}
+@media screen and (max-width: 450px){
+.grape-pic {
+	width: 100% !important;
+	}
+.grape-name
+{
+	padding-left: 10px;
+}
+	.wine-description p {
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 10px;
+}
+	h4
+	{padding: 30px 20px;
+	 line-height: 30px !important;}
+}
+
+/* Контакт
+ * 
+ * */
+
+.contact-page.first {
+    padding: 150px  120px 0 120px;
+}
+
+
+@media screen and (max-width: 1024px){
+
+	.contact-page.first
+	{  
+	  padding: 0 20px !important;
+     }
+	
+	.contact-page.second, .vc_custom_1663341758503 {padding-bottom: 50px;}
+}
+
+/* Раздел Вакансии */
+
+.vacancies-pic .kt-row-has-bg>.kt-row-column-wrap
+{padding-left: 0;
+ padding-right: 0}
